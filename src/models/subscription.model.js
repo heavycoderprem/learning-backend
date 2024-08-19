@@ -1,5 +1,5 @@
 import mongoose, {Schema} from "mongoose"
-import { User } from "./user.model"
+
 
 const subscriptionSchema = mongoose.Schema({
     subscriber: {
@@ -12,3 +12,5 @@ const subscriptionSchema = mongoose.Schema({
     }
     
 },{timestamps: true})
+
+export const Subscription = mongoose.model("Subscription",subscriptionSchema)
